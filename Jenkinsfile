@@ -2,7 +2,7 @@ node ('master') {
     def uniqueId = UUID.randomUUID().toString()
     def imageName = 'ubuntu' //can be any image you want to execute
 
-    //Writing a file to demonstrate how to copy (stash/unstash) files to the container
+    //Writing a file to demonstrate how to copy (stash/unstash) files to the container 
     sh 'echo Hello World > test.txt'
     stash 'masterWorkspace'
 
