@@ -45,7 +45,7 @@ node ('master') {
                     cat test.txt
                 '''
             }
-            // stash results
+            // stash results 
             stash 'containerResults'
         }
     }
