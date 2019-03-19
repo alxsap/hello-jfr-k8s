@@ -13,7 +13,7 @@ node ('master') {
         containers: [
             containerTemplate(
                 name: 'jnlp', 
-                image: 'alxsap/temp:jnlp-slave-before',
+                image: 'alxsap/temp:jenkinsci-docker-jnlp-slave-after1',
                 args: '${computer.jnlpmac} ${computer.name}'
             ),
 
